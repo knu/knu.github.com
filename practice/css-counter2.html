@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body { counter-reset: h1; }
+      h1   { counter-reset: h2; }
+      h2   { counter-reset: h3; }
+      h3   { counter-reset: h4; }
+      h4   { counter-reset: h5; }
+      h5   { counter-reset: h6; }
+      h1.number:before {
+        content: counter(h1) ". ";
+        counter-increment: h1;
+      }
+      h2.number:before {
+        content: counter(h1) "." counter(h2) " ";
+        counter-increment: h2;
+      }
+      h3.number:before {
+        content: counter(h1) "." counter(h2) "." counter(h3) " ";
+        counter-increment: h3;
+      }
+      h4.number:before {
+        content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " ";
+        counter-increment: h4;
+      }
+      h5.number:before {
+        content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " ";
+        counter-increment: h5;
+      }
+      h6.number:before {
+        content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " ";
+        counter-increment: h6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="number">プロローグ</h1>
+    <h2 class="number">ようこそ</h1>
+    <h2 class="number">こんにちは</h1>
+    <h1 class="number">本編</h1>
+    <h2 class="number">起</h1>
+    <h3 class="number">むかしむかし</h1>
+    <h3 class="number">ほうほうそれで</h1>
+    <h2 class="number">承</h1>
+    <h3 class="number">順調に</h1>
+    <h3 class="number">進行</h1>
+    <h2 class="number">転</h1>
+    <h3 class="number">まさかの</h1>
+    <h3 class="number">展開</h1>
+    <h2 class="number">結</h1>
+    <h3 class="number">最後は</h1>
+    <h3 class="number">めでたし</h1>
+    <h1 class="number">エピローグ</h1>
+    <h2 class="number">ほんとに</h1>
+    <h2 class="number">おしまいです</h1>
+  </body>
+</html>

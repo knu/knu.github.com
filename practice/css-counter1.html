@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ol {
+        counter-reset: item;
+        list-style: none;
+      }
+      li:before {
+        content: counters(item, ".") ". ";
+        counter-increment: item;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>Item
+      <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ol></li>
+      <li>Item</li>
+      <li>Item
+      <ol>
+        <li>Item</li>
+        <li>Item
+        <ol>
+          <li>Item</li>
+          <li>Item</li>
+          <li>Item</li>
+        </ol></li>
+        <li>Item</li>
+      </ol>
+      </li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+  </body>
+</html>
